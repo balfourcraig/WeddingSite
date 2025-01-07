@@ -1,0 +1,38 @@
+.faq {
+    border: 1px solid #f99;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.faq .faqAnswer{
+    display: block;
+}
+
+.faq h2 {
+    cursor: pointer;
+    margin: 0;
+    border-bottom: 1px solid;
+}
+
+.faq.inactive{
+    background-color: #ddd;
+}
+
+.faq.inactive .faqAnswer{
+    display: none;
+}
+
+.faq h2::before, .faq.inactive h2::before {
+    opacity: .5;
+    font-size: .5em;
+    padding-right: .5em;
+}
+
+.faq h2::before{
+    content: "⮝ ";
+}
+
+.faq.inactive h2::before{
+    content: "⮟ ";
+}

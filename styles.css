@@ -17,7 +17,7 @@ a{
 }
 
 a:hover{
-	color: #b3fff0;
+	color: black;
 	text-shadow: 0 0 15px #ff662a;
 }
 
@@ -36,6 +36,11 @@ main p {
 h1, h2, h3, h3{
 	color: red;
     font-family: cursive;
+}
+
+h1.siteTitle{
+    text-align: center;
+    font-size: 3em;
 }
 
 .navHolder{
@@ -58,6 +63,19 @@ nav a{
 	text-align: center;
 	text-decoration: none;
     font-family: cursive;
+}
+
+nav a.selected::before, nav a.selected::after{
+    opacity: 0.5;
+    font-size: 0.8em;
+}
+
+nav a.selected::before{
+    content: "囍 - ";
+}
+
+nav a.selected::after{
+    content: "- 囍";
 }
 
 nav a.selected{
@@ -115,7 +133,7 @@ li{
 
 .scrollOverflow{
 	width: 100%;
-	height: 90vh;
+	height: 10vh;
 	position: relative;
 }
 
@@ -123,6 +141,27 @@ li{
 	width: 100%;
 }
 
+.name{
+    color: black !important
+}
+
+div.center{
+    text-align: center;
+}
+
+
+.infoBlock {
+    border-bottom: 1px dashed red;
+}
+
+.infoBlock h2 {
+    margin-bottom: 0;
+}
+
+.infoBlock {
+    margin-bottom: 2em;
+}
+  
 
 @media screen and (max-width: 600px){
     nav{
@@ -133,3 +172,5 @@ li{
     }
     
 }
+
+
