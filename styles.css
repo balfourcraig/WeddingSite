@@ -1,0 +1,135 @@
+*{
+	box-sizing: border-box !important;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	min-height: 100vh;
+	background-color: #eee;
+	display: flex;
+	flex-direction: column;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+	color: red;
+}
+
+a:hover{
+	color: #b3fff0;
+	text-shadow: 0 0 15px #ff662a;
+}
+
+main{
+	flex-grow: 1;
+}
+
+main .pageWidth{
+	position: relative;
+}
+
+main p {
+	line-height: 1.5em;
+}
+
+h1, h2, h3, h3{
+	color: red;
+    font-family: cursive;
+}
+
+.navHolder{
+	width: 100%;
+	background-color: #ddd;
+	border-bottom: 2px solid red;
+}
+
+nav{
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a{
+	padding: 10px;
+	font-size: 1.5rem;
+	flex-grow: 1;
+	text-align: center;
+	text-decoration: none;
+    font-family: cursive;
+}
+
+nav a.selected{
+	border-left: 2px solid red;
+	border-right: 2px solid red;
+	background-color: #fff;
+}
+
+
+nav a:hover{
+	text-decoration: none;
+	background-color: red;
+	color: white;
+}
+
+button{
+	margin: 5px 0;
+	padding: 10px;
+	border: 2px outset red;
+	color: red;
+	background-color: black;
+	border-radius: 0.5em;
+	cursor: pointer;
+}
+
+button:hover{
+	background-color: red;
+	color: black;
+}
+
+button:disabled{
+	color: grey;
+	border-color: grey;
+	cursor: not-allowed;
+}
+
+button:disabled:hover{
+	background-color: white;
+}
+
+li{
+	margin-bottom: 1em;
+}
+
+.pageWidth{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #fff;
+	min-height: 100%;
+	color: #222;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+}
+
+.scrollOverflow{
+	width: 100%;
+	height: 90vh;
+	position: relative;
+}
+
+.fullwidth{
+	width: 100%;
+}
+
+
+@media screen and (max-width: 600px){
+    nav{
+        flex-direction: column;
+    }
+    nav a{
+        flex-grow: 0;
+    }
+    
+}
