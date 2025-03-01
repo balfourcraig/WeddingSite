@@ -161,7 +161,36 @@ div.center{
 .infoBlock {
     margin-bottom: 2em;
 }
-  
+
+.imageGuide{
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.attractionsGrid{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 10px;
+}
+
+.attractionBlock{
+	padding: 10px;
+}
+
+.attractionBlock h3 {
+	margin-bottom: 0;
+}
+
+.attractionBlock img {
+	width: 100%;
+	height: auto;
+}
+
+.attractionBlock .caption{
+	font-style: italic;
+	opacity: 0.8;
+}
 
 @media screen and (max-width: 600px){
     nav{
@@ -171,6 +200,7 @@ div.center{
         flex-grow: 0;
     }
     
+
 }
 
 
