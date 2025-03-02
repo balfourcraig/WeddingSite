@@ -33,7 +33,7 @@ main p {
 	line-height: 1.5em;
 }
 
-h1, h2, h3, h3{
+h1, h2, h3, h4{
 	color: #c00;
     font-family: cursive;
 }
@@ -200,8 +200,6 @@ div.center{
     nav a{
         flex-grow: 0;
     }
-    
-
 }
 
 
