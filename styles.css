@@ -13,7 +13,7 @@ body{
 }
 
 a{
-	color: red;
+	color: #c00;
 }
 
 a:hover{
@@ -34,7 +34,7 @@ main p {
 }
 
 h1, h2, h3, h3{
-	color: red;
+	color: #c00;
     font-family: cursive;
 }
 
@@ -46,7 +46,7 @@ h1.siteTitle{
 .navHolder{
 	width: 100%;
 	background-color: #ddd;
-	border-bottom: 2px solid red;
+	border-bottom: 2px solid #c00;
 }
 
 nav{
@@ -68,6 +68,7 @@ nav a{
 nav a.selected::before, nav a.selected::after{
     opacity: 0.5;
     font-size: 0.8em;
+	color: red;
 }
 
 nav a.selected::before{
@@ -79,30 +80,30 @@ nav a.selected::after{
 }
 
 nav a.selected{
-	border-left: 2px solid red;
-	border-right: 2px solid red;
+	border-left: 2px solid #c00;
+	border-right: 2px solid #c00;
 	background-color: #fff;
 }
 
 
 nav a:hover{
 	text-decoration: none;
-	background-color: red;
+	background-color: #c00;
 	color: white;
 }
 
 button{
 	margin: 5px 0;
 	padding: 10px;
-	border: 2px outset red;
-	color: red;
+	border: 2px outset #c00;
+	color: #c00;
 	background-color: black;
 	border-radius: 0.5em;
 	cursor: pointer;
 }
 
 button:hover{
-	background-color: red;
+	background-color: #c00;
 	color: black;
 }
 
@@ -127,8 +128,8 @@ li{
 	background-color: #fff;
 	min-height: 100%;
 	color: #222;
-    border-left: 2px solid red;
-    border-right: 2px solid red;
+    border-left: 2px solid #c00;
+    border-right: 2px solid #c00;
 }
 
 .scrollOverflow{
@@ -151,7 +152,7 @@ div.center{
 
 
 .infoBlock {
-    border-bottom: 1px dashed red;
+    border-bottom: 1px dashed #c00;
 }
 
 .infoBlock h2 {
