@@ -142,6 +142,10 @@ li{
 	width: 100%;
 }
 
+.mapFrame{
+	max-width: 100%;
+}
+
 .name{
     color: black !important
 }
@@ -196,6 +200,11 @@ div.center{
 .attractionBlock .caption{
 	font-style: italic;
 	opacity: 0.8;
+}
+
+.commitBlock {
+	border-bottom: 1px solid #c00;
+	border-top: 1px dashed #c00;
 }
 
 @media screen and (max-width: 600px){
