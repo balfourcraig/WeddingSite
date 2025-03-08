@@ -169,6 +169,11 @@ div.center{
 	margin: 0 auto;
 }
 
+.screenshot{
+	max-width: 50%;
+	height: auto;
+}
+
 .attractionsGrid{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -200,6 +205,9 @@ div.center{
     nav a{
         flex-grow: 0;
     }
+	.screenshot{
+		max-width: 100%;
+	}
 }
 
 
